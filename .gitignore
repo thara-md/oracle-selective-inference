@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# LaTeX temporary files
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Confidential data and credentials
+.env
+.env.*
+secrets/
+private_data/
+patient_data/
+raw_outputs/
+*.dcm
+*.dicom
+
+# OS
+.DS_Store
+Thumbs.db
