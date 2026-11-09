@@ -1,0 +1,159 @@
+{
+  "study": "Synthetic paired negative/positive controls for oracle inflation",
+  "design": {
+    "seeds": 200,
+    "alpha": 0.02,
+    "train": 500,
+    "calibration_n": 500,
+    "test": 5000,
+    "base": "X=0 with p=0.4, error=0.01; X=1 with p=0.6, error=0.35",
+    "negative": "Z uniform independent of (X,error) for k=2/4/16",
+    "positive": "S with P(S=error)=q, q=0.90/0.98, synthetic hypothetical observed proxy",
+    "calibration": "empirical risk constraint, randomized boundary, not guaranteed population risk"
+  },
+  "results": {
+    "baseline": {
+      "oracle_train_coverage_mean": 0.37715134998981015,
+      "test_coverage_mean": 0.3833989641640083,
+      "test_risk_mean": 0.02166025772318581,
+      "test_risk_violation_rate": 0.565,
+      "test_risk_at_cover50_mean": 0.07780663102441106,
+      "test_curve_mean_risk": 0.07831237278155805
+    },
+    "null_2": {
+      "oracle_train_coverage_mean": 0.39977456126369176,
+      "oracle_minus_baseline_mean_pp": 2.2623211273881663,
+      "oracle_minus_baseline_95ci_pp": [
+        1.2710070300026264,
+        3.3949750152133698
+      ],
+      "test_coverage_mean": 0.39239547949234516,
+      "test_minus_baseline_mean_pp": 0.8996515328336754,
+      "test_minus_baseline_95ci_pp": [
+        0.2873729101198974,
+        1.6663641632392059
+      ],
+      "test_risk_mean": 0.021465028758432737,
+      "test_risk_violation_rate": 0.56,
+      "test_feasible_rate": 0.395,
+      "test_risk_at_cover50_minus_baseline_mean_pp": -0.029336830671694576,
+      "test_risk_at_cover50_minus_baseline_95ci_pp": [
+        -0.05623036181034869,
+        -0.004627978566160083
+      ],
+      "test_curve_mean_risk_minus_baseline_pp": -0.02744846216373584,
+      "test_curve_mean_risk_minus_baseline_95ci_pp": [
+        -0.049911903660300176,
+        -0.006202037454372798
+      ]
+    },
+    "null_4": {
+      "oracle_train_coverage_mean": 0.41054472763981836,
+      "oracle_minus_baseline_mean_pp": 3.33933776500082,
+      "oracle_minus_baseline_95ci_pp": [
+        1.9514184089908726,
+        4.790598877647481
+      ],
+      "test_coverage_mean": 0.39775331835704847,
+      "test_minus_baseline_mean_pp": 1.435435419304005,
+      "test_minus_baseline_95ci_pp": [
+        0.6419720188073735,
+        2.3529486168373466
+      ],
+      "test_risk_mean": 0.021408583910289068,
+      "test_risk_violation_rate": 0.56,
+      "test_feasible_rate": 0.42,
+      "test_risk_at_cover50_minus_baseline_mean_pp": 0.012222597019674708,
+      "test_risk_at_cover50_minus_baseline_95ci_pp": [
+        -0.03014777988986203,
+        0.04891616993932201
+      ],
+      "test_curve_mean_risk_minus_baseline_pp": 0.0034841949467179635,
+      "test_curve_mean_risk_minus_baseline_95ci_pp": [
+        -0.020029085687421816,
+        0.02515819261670154
+      ]
+    },
+    "null_16": {
+      "oracle_train_coverage_mean": 0.42998547098775947,
+      "oracle_minus_baseline_mean_pp": 5.283412099794932,
+      "oracle_minus_baseline_95ci_pp": [
+        3.8783577725890845,
+        6.775321380305037
+      ],
+      "test_coverage_mean": 0.40085275223183403,
+      "test_minus_baseline_mean_pp": 1.7453788067825577,
+      "test_minus_baseline_95ci_pp": [
+        0.8993672467833367,
+        2.7231999039314547
+      ],
+      "test_risk_mean": 0.022073896041877625,
+      "test_risk_violation_rate": 0.555,
+      "test_feasible_rate": 0.43,
+      "test_risk_at_cover50_minus_baseline_mean_pp": 0.005375911920609051,
+      "test_risk_at_cover50_minus_baseline_95ci_pp": [
+        -0.04423917038929426,
+        0.05566009832254874
+      ],
+      "test_curve_mean_risk_minus_baseline_pp": -0.00212911621378771,
+      "test_curve_mean_risk_minus_baseline_95ci_pp": [
+        -0.03055426159521475,
+        0.02404756462861824
+      ]
+    },
+    "positive_0.9": {
+      "oracle_train_coverage_mean": 0.5839678580747599,
+      "oracle_minus_baseline_mean_pp": 20.68165080849498,
+      "oracle_minus_baseline_95ci_pp": [
+        18.697248943464732,
+        22.66191697642422
+      ],
+      "test_coverage_mean": 0.5520014260052222,
+      "test_minus_baseline_mean_pp": 16.860246184121383,
+      "test_minus_baseline_95ci_pp": [
+        15.091386298489784,
+        18.668866651933946
+      ],
+      "test_risk_mean": 0.021628534575145388,
+      "test_risk_violation_rate": 0.535,
+      "test_feasible_rate": 0.465,
+      "test_risk_at_cover50_minus_baseline_mean_pp": -5.875104876373539,
+      "test_risk_at_cover50_minus_baseline_95ci_pp": [
+        -5.937592283313197,
+        -5.810463808425495
+      ],
+      "test_curve_mean_risk_minus_baseline_pp": -6.093580547238561,
+      "test_curve_mean_risk_minus_baseline_95ci_pp": [
+        -6.137121681711878,
+        -6.048919501826343
+      ]
+    },
+    "positive_0.98": {
+      "oracle_train_coverage_mean": 0.7959246014623631,
+      "oracle_minus_baseline_mean_pp": 41.8773251472553,
+      "oracle_minus_baseline_95ci_pp": [
+        40.35293555866077,
+        43.57479049019234
+      ],
+      "test_coverage_mean": 0.7952256162228979,
+      "test_minus_baseline_mean_pp": 41.18266520588895,
+      "test_minus_baseline_95ci_pp": [
+        39.75137475197715,
+        42.73812174948641
+      ],
+      "test_risk_mean": 0.020491945796122978,
+      "test_risk_violation_rate": 0.595,
+      "test_feasible_rate": 0.405,
+      "test_risk_at_cover50_minus_baseline_mean_pp": -7.346787504040398,
+      "test_risk_at_cover50_minus_baseline_95ci_pp": [
+        -7.434184287605211,
+        -7.258097639574547
+      ],
+      "test_curve_mean_risk_minus_baseline_pp": -7.459292608396279,
+      "test_curve_mean_risk_minus_baseline_95ci_pp": [
+        -7.51525047122308,
+        -7.402295865269756
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+﻿condition,block_kind,n,errors,is_duplicated
+All-category GPT,PDAC×20,32,6,True
+All-category GPT,NET×20,2,1,True
+All-category GPT,19PDAC+1NET shared sequence,2,0,True
+All-category GPT,unique correct sequences (individual singletons),26,0,False
+All-category GPT,unique erroneous sequences (individual singletons),24,24,False
+All-category Gemini,PDAC×20,11,2,True
+All-category Gemini,NET×20,14,8,True
+All-category Gemini,19NET+1PDAC shared sequence,2,2,True
+All-category Gemini,unique correct sequences (individual singletons),23,0,False
+All-category Gemini,unique erroneous sequences (individual singletons),38,38,False
+PDAC/NET GPT,PDAC×20,28,2,True
+PDAC/NET GPT,NET×20,2,1,True
+PDAC/NET GPT,19PDAC+1NET shared sequence,2,0,True
+PDAC/NET GPT,unique correct sequences (individual singletons),26,0,False
+PDAC/NET GPT,unique erroneous sequences (individual singletons),17,17,False
+PDAC/NET Gemini,PDAC×20,11,2,True
+PDAC/NET Gemini,NET×20,13,7,True
+PDAC/NET Gemini,19NET+1PDAC shared sequence,2,2,True
+PDAC/NET Gemini,unique correct sequences (individual singletons),22,0,False
+PDAC/NET Gemini,unique erroneous sequences (individual singletons),29,29,False

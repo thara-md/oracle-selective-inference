@@ -1,0 +1,74 @@
+{
+  "title": "P1: reconcile clinical and synthetic negative/positive controls",
+  "date": "2026-11-04",
+  "status": "reproduced with separate input contexts",
+  "source_hashes": {
+    "synthetic_results_json_sha256": "8094032cbe36782f604978cc6d5b3ede962298d19226a88de88b666a84239a73",
+    "synthetic_code_sha256": "846bc81b67f0fbac4d75c10109e8e98d20a824988816f5964dc2444c957ba76d",
+    "clinical_P0_summary_csv_sha256": "7cbf301030abfed65f17e1e53f19e829fe2f0941fd19895cf8e9edd5687b1878",
+    "clinical_P0_code_sha256": "061658443b029bf4f87dedc1b1443476e907342f326c22cf2ca80a9e0929c285"
+  },
+  "clinical": {
+    "n_patients": 90,
+    "n_patient_model_units": 174,
+    "n_model_strata": 4,
+    "seed_replications_per_k_and_stratum": 200,
+    "n_lp_optima": 2400,
+    "input_level": "audited reconstructed aggregate equivalence blocks, not raw patient rows",
+    "all_category_GPT": {
+      "baseline_cov_pct": 44.397463002114165,
+      "null16_mean_pct": 64.70835374155898,
+      "null16_mean_gain_pp": 20.310890739444815
+    },
+    "interpretation": "Fixed finite-sample, correctness-independent random features artificially partition input-equivalence classes. No clinical held-out test."
+  },
+  "synthetic": {
+    "seeds": 200,
+    "train": 500,
+    "calibration": 500,
+    "test": 5000,
+    "baseline_true_population_optimal_coverage_pct": 45.333333333333336,
+    "baseline_test_risk_at_fixed50_pct": 7.780663102441106,
+    "null16": {
+      "oracle_baseline_pct": 45.40839074904855,
+      "oracle_null16_pct": 50.702179009262636,
+      "cal_test_cov_baseline_pct": 45.47026727494183,
+      "cal_test_cov_null16_pct": 45.77912863962711,
+      "cal_test_risk_baseline_pct": 5.058746216137744,
+      "cal_test_risk_null16_pct": 5.217272466976228,
+      "fixed50_risk_delta_pp": 0.005375911920609051,
+      "fixed50_risk_delta_95ci_pp": [
+        -0.04423917038929426,
+        0.05566009832254874
+      ]
+    },
+    "risk_sensitivity_pct": {
+      "2": {
+        "baseline_oracle_pct": 37.7151,
+        "null_16_oracle_pct": 42.9985,
+        "gain_pct_points": 5.2834,
+        "fixed50_null16_risk_delta_pp": 0.00538
+      },
+      "5": {
+        "baseline_oracle_pct": 45.4084,
+        "null_16_oracle_pct": 50.7022,
+        "gain_pct_points": 5.2938,
+        "fixed50_null16_risk_delta_pp": 0.00538
+      },
+      "10": {
+        "baseline_oracle_pct": 54.711,
+        "null_16_oracle_pct": 64.3206,
+        "gain_pct_points": 9.6097,
+        "fixed50_null16_risk_delta_pp": 0.00538
+      }
+    },
+    "interpretation": "Test fixed50 risk is a diagnostic curve using test feature distribution to set coverage; it is NOT a deployment policy or evidence of satisfying risk 5%. Positive proxy is generated from error labels and is intentionally artificial."
+  },
+  "caveats": [
+    "Clinical and synthetic oracle gains are on different experimental populations and must not be pooled or directly compared as effects.",
+    "A bootstrap CI containing zero is not proof of equivalence; equivalence requires a prespecified tolerance.",
+    "200 Monte Carlo seeds and 5000 test records/seed are not 200 independent clinical cohorts.",
+    "Original 50-seed RNG stream unavailable; clinical 200-seed analysis is a fresh Monte Carlo rerun.",
+    "Archived patient-level shared_sequence_blocks.csv and GT join still require direct source comparison before manuscript submission."
+  ]
+}

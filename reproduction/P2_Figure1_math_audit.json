@@ -1,0 +1,23 @@
+{
+  "source": "P0 2026-11-04 aggregate-equivalence reconstruction from archival 2026-09-15 audit",
+  "input_sha256": "12724aeb919f83554fa2f8948e0e2d0bd2ca74bd9cfe68c2d579ce8ebb3f723f",
+  "scope": "All-category GPT; n=86; 31 errors; fixed original predictions",
+  "oracle_representation": "ordered 20 labels + saved modal; equal input => equal adoption probability",
+  "alpha_fraction": "1/20",
+  "target_coverage_fraction": "1/2",
+  "sequence_oracle_coverage_fraction": "210/473",
+  "casewise_oracle_coverage_fraction": "550/817",
+  "primal_dual_multiplier": "80/11",
+  "minimum_risk_at_50pct_coverage_fraction": "45/688",
+  "casewise_minimum_risk_at_50pct_coverage_fraction": "0",
+  "single_pdac_collision_coverage_upper_bound_fraction": "435/946",
+  "best_low_H_point": {
+    "accepted": 34,
+    "errors": 7,
+    "coverage_fraction": "17/43",
+    "risk_fraction": "7/34"
+  },
+  "max_curve_gap_full_vs_unanimity_relaxation_float": 0.0,
+  "clinical_validation": "NONE; no test-set risk guarantee",
+  "full_threshold_scatter": "NOT available without individual entropy/GT; single archived verified best point shown"
+}

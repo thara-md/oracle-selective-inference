@@ -1,0 +1,25 @@
+{
+  "P0 aggregate": {
+    "returncode": 0,
+    "stdout_tail": "= (40.657, 40.9274) prior50= 40.79\n k= 4 mean= 43.9321 SD= 2.1503 SE= 0.1521 95% MC mean CI= (43.6341, 44.2302) prior50= 44.21\n k= 16 mean= 49.1218 SD= 1.4906 SE= 0.1054 95% MC mean CI= (48.9152, 49.3284) prior50= 49.06\n",
+    "stderr_tail": ""
+  },
+  "P1 synthetic": {
+    "returncode": 0,
+    "stdout_tail": "8097639574547\n      ],\n      \"test_curve_mean_risk_minus_baseline_pp\": -7.459292608396279,\n      \"test_curve_mean_risk_minus_baseline_95ci_pp\": [\n        -7.51525047122308,\n        -7.402295865269756\n      ]\n    }\n  }\n}\n",
+    "stderr_tail": ""
+  },
+  "P2 figure1": {
+    "returncode": 0,
+    "stdout_tail": "ll_vs_unanimity_relaxation_float\": 0.0,\n  \"clinical_validation\": \"NONE; no test-set risk guarantee\",\n  \"full_threshold_scatter\": \"NOT available without individual entropy/GT; single archived verified best point shown\"\n}\n",
+    "stderr_tail": ""
+  },
+  "P1 figure2": {
+    "returncode": 0,
+    "stdout_tail": "t': 50.7022, 'gain_pct_points': 5.2938, 'fixed50_null16_risk_delta_pp': 0.00538}, '10': {'baseline_oracle_pct': 54.711, 'null_16_oracle_pct': 64.3206, 'gain_pct_points': 9.6097, 'fixed50_null16_risk_delta_pp': 0.00538}}\n",
+    "stderr_tail": ""
+  },
+  "P0 archived summary byte-identical": true,
+  "P0 archived per-seed byte-identical": true,
+  "P1 archived 200seed JSON byte-identical": true
+}

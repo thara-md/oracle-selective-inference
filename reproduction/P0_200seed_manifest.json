@@ -1,0 +1,1452 @@
+{
+  "analysis": "P0 clinical random-symbol refinement (aggregate block reconstruction)",
+  "timestamp_label": "2026-11-04",
+  "n_seeds": 200,
+  "seed_range": "0...199",
+  "base_seed": 20261104,
+  "rng": "numpy Generator(PCG64 via SeedSequence [base_seed, condition_index, k, seed])",
+  "symbol_values": [
+    2,
+    4,
+    16
+  ],
+  "alpha_fraction": "1/20",
+  "data_provenance": "Full sequence collision and GT block aggregates from 2026-09-15 archival audit narrative plus user-provided tables, reconciled with 4 exact rational primal-dual certificates. No raw patient-level data or run files reprocessed; no clinical labels modified.",
+  "original_50_seed_rng": "not recovered; 200-seed results are independent rerun, not continuation of the original 50 RNG states",
+  "mc_uncertainty": "95% normal-approximation Monte Carlo confidence intervals of simulated mean conditional on the fixed clinical cohort; NOT patient-sampling confidence intervals",
+  "reference_sha256": {},
+  "block_counts": {
+    "All-category GPT": [
+      [
+        32,
+        6
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "All-category Gemini": [
+      [
+        11,
+        2
+      ],
+      [
+        14,
+        8
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "PDAC/NET GPT": [
+      [
+        28,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "PDAC/NET Gemini": [
+      [
+        11,
+        2
+      ],
+      [
+        13,
+        7
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  "details": {
+    "All-category GPT": {
+      "n": 86,
+      "errors": 31,
+      "n_base_blocks": 53,
+      "full_sequence_fraction": "210/473",
+      "full_sequence_coverage_pct": 44.397463002114165,
+      "lambda": "80/11",
+      "casewise_fraction": "550/817",
+      "casewise_coverage_pct": 67.31946144430844,
+      "noise": {
+        "2": {
+          "condition": "All-category GPT",
+          "n": 86,
+          "errors": 31,
+          "risk_pct": 5,
+          "k": 2,
+          "seeds": 200,
+          "baseline_pct": 44.397463002114165,
+          "mean_pct": 51.013065853466614,
+          "gain_pct_points": 6.615602851352449,
+          "sd_pct": 4.211442102260119,
+          "se_pct": 0.297793926908266,
+          "mc_lower95_pct": 50.429389756726415,
+          "mc_upper95_pct": 51.59674195020681,
+          "min_pct": 44.397463002114165,
+          "max_pct": 61.12956810631229,
+          "casewise_pct": 67.31946144430844,
+          "old_50_mean_pct": 50.92,
+          "delta_vs_prior50_pct_points": 0.09306585346661223,
+          "avg_n_refined_blocks": 54.94
+        },
+        "4": {
+          "condition": "All-category GPT",
+          "n": 86,
+          "errors": 31,
+          "risk_pct": 5,
+          "k": 4,
+          "seeds": 200,
+          "baseline_pct": 44.397463002114165,
+          "mean_pct": 56.44216098999086,
+          "gain_pct_points": 12.044697987876695,
+          "sd_pct": 3.6775014499294802,
+          "se_pct": 0.2600386213068496,
+          "mc_lower95_pct": 55.93248529222944,
+          "mc_upper95_pct": 56.951836687752284,
+          "min_pct": 46.51162790697674,
+          "max_pct": 65.5813953488372,
+          "casewise_pct": 67.31946144430844,
+          "old_50_mean_pct": 55.87,
+          "delta_vs_prior50_pct_points": 0.5721609899908628,
+          "avg_n_refined_blocks": 57.485
+        },
+        "16": {
+          "condition": "All-category GPT",
+          "n": 86,
+          "errors": 31,
+          "risk_pct": 5,
+          "k": 16,
+          "seeds": 200,
+          "baseline_pct": 44.397463002114165,
+          "mean_pct": 64.70835374155898,
+          "gain_pct_points": 20.310890739444815,
+          "sd_pct": 1.7084333348142196,
+          "se_pct": 0.1208044796252282,
+          "mc_lower95_pct": 64.47157696149354,
+          "mc_upper95_pct": 64.94513052162442,
+          "min_pct": 59.800664451827245,
+          "max_pct": 67.31946144430844,
+          "casewise_pct": 67.31946144430844,
+          "old_50_mean_pct": 64.85,
+          "delta_vs_prior50_pct_points": -0.14164625844101408,
+          "avg_n_refined_blocks": 67.83
+        }
+      }
+    },
+    "All-category Gemini": {
+      "n": 88,
+      "errors": 50,
+      "n_base_blocks": 64,
+      "full_sequence_fraction": "115/319",
+      "full_sequence_coverage_pct": 36.05015673981191,
+      "lambda": "220/29",
+      "casewise_fraction": "5/11",
+      "casewise_coverage_pct": 45.45454545454545,
+      "noise": {
+        "2": {
+          "condition": "All-category Gemini",
+          "n": 88,
+          "errors": 50,
+          "risk_pct": 5,
+          "k": 2,
+          "seeds": 200,
+          "baseline_pct": 36.05015673981191,
+          "mean_pct": 37.09048730314586,
+          "gain_pct_points": 1.0403305633339528,
+          "sd_pct": 0.6909772496066832,
+          "se_pct": 0.048859469884251536,
+          "mc_lower95_pct": 36.99472274217273,
+          "mc_upper95_pct": 37.186251864118994,
+          "min_pct": 36.36363636363637,
+          "max_pct": 40.90909090909091,
+          "casewise_pct": 45.45454545454545,
+          "old_50_mean_pct": 37.11,
+          "delta_vs_prior50_pct_points": -0.019512696854135925,
+          "avg_n_refined_blocks": 66.505
+        },
+        "4": {
+          "condition": "All-category Gemini",
+          "n": 88,
+          "errors": 50,
+          "risk_pct": 5,
+          "k": 4,
+          "seeds": 200,
+          "baseline_pct": 36.05015673981191,
+          "mean_pct": 39.27926816350147,
+          "gain_pct_points": 3.2291114236895595,
+          "sd_pct": 1.6988022812810353,
+          "se_pct": 0.12012346129889967,
+          "mc_lower95_pct": 39.04382617935563,
+          "mc_upper95_pct": 39.514710147647314,
+          "min_pct": 36.93181818181818,
+          "max_pct": 44.19191919191919,
+          "casewise_pct": 45.45454545454545,
+          "old_50_mean_pct": 39.66,
+          "delta_vs_prior50_pct_points": -0.3807318364985264,
+          "avg_n_refined_blocks": 70.53
+        },
+        "16": {
+          "condition": "All-category Gemini",
+          "n": 88,
+          "errors": 50,
+          "risk_pct": 5,
+          "k": 16,
+          "seeds": 200,
+          "baseline_pct": 36.05015673981191,
+          "mean_pct": 43.97471442508207,
+          "gain_pct_points": 7.924557685270159,
+          "sd_pct": 1.2958888121434966,
+          "se_pct": 0.09163317667304464,
+          "mc_lower95_pct": 43.795113398802904,
+          "mc_upper95_pct": 44.154315451361235,
+          "min_pct": 40.4040404040404,
+          "max_pct": 45.45454545454545,
+          "casewise_pct": 45.45454545454545,
+          "old_50_mean_pct": 43.87,
+          "delta_vs_prior50_pct_points": 0.10471442508207218,
+          "avg_n_refined_blocks": 80.77
+        }
+      }
+    },
+    "PDAC/NET GPT": {
+      "n": 75,
+      "errors": 20,
+      "n_base_blocks": 46,
+      "full_sequence_fraction": "104/135",
+      "full_sequence_coverage_pct": 77.03703703703704,
+      "lambda": "20/9",
+      "casewise_fraction": "44/57",
+      "casewise_coverage_pct": 77.19298245614036,
+      "noise": {
+        "2": {
+          "condition": "PDAC/NET GPT",
+          "n": 75,
+          "errors": 20,
+          "risk_pct": 5,
+          "k": 2,
+          "seeds": 200,
+          "baseline_pct": 77.03703703703704,
+          "mean_pct": 77.1150097465887,
+          "gain_pct_points": 0.07797270955165914,
+          "sd_pct": 0.07816837537888495,
+          "se_pct": 0.005527338830474511,
+          "mc_lower95_pct": 77.10417616248097,
+          "mc_upper95_pct": 77.12584333069643,
+          "min_pct": 77.03703703703704,
+          "max_pct": 77.19298245614036,
+          "casewise_pct": 77.19298245614036,
+          "old_50_mean_pct": 77.11,
+          "delta_vs_prior50_pct_points": 0.005009746588697794,
+          "avg_n_refined_blocks": 47.955
+        },
+        "4": {
+          "condition": "PDAC/NET GPT",
+          "n": 75,
+          "errors": 20,
+          "risk_pct": 5,
+          "k": 4,
+          "seeds": 200,
+          "baseline_pct": 77.03703703703704,
+          "mean_pct": 77.15399610136453,
+          "gain_pct_points": 0.1169590643274887,
+          "sd_pct": 0.06769579885067241,
+          "se_pct": 0.004786815842515095,
+          "mc_lower95_pct": 77.1446139423132,
+          "mc_upper95_pct": 77.16337826041585,
+          "min_pct": 77.03703703703704,
+          "max_pct": 77.19298245614036,
+          "casewise_pct": 77.19298245614036,
+          "old_50_mean_pct": 77.16,
+          "delta_vs_prior50_pct_points": -0.006003898635469795,
+          "avg_n_refined_blocks": 50.425
+        },
+        "16": {
+          "condition": "PDAC/NET GPT",
+          "n": 75,
+          "errors": 20,
+          "risk_pct": 5,
+          "k": 16,
+          "seeds": 200,
+          "baseline_pct": 77.03703703703704,
+          "mean_pct": 77.18674463937623,
+          "gain_pct_points": 0.14970760233919123,
+          "sd_pct": 0.03063562139209661,
+          "se_pct": 0.0021662655632215173,
+          "mc_lower95_pct": 77.18249875887231,
+          "mc_upper95_pct": 77.19099051988015,
+          "min_pct": 77.03703703703704,
+          "max_pct": 77.19298245614036,
+          "casewise_pct": 77.19298245614036,
+          "old_50_mean_pct": 77.19,
+          "delta_vs_prior50_pct_points": -0.0032553606237684107,
+          "avg_n_refined_blocks": 60.1
+        }
+      }
+    },
+    "PDAC/NET Gemini": {
+      "n": 77,
+      "errors": 40,
+      "n_base_blocks": 54,
+      "full_sequence_fraction": "80/203",
+      "full_sequence_coverage_pct": 39.40886699507389,
+      "lambda": "220/29",
+      "casewise_fraction": "740/1463",
+      "casewise_coverage_pct": 50.580997949419,
+      "noise": {
+        "2": {
+          "condition": "PDAC/NET Gemini",
+          "n": 77,
+          "errors": 40,
+          "risk_pct": 5,
+          "k": 2,
+          "seeds": 200,
+          "baseline_pct": 39.40886699507389,
+          "mean_pct": 40.79222014051577,
+          "gain_pct_points": 1.3833531454418733,
+          "sd_pct": 0.9754967476745633,
+          "se_pct": 0.06897803653061062,
+          "mc_lower95_pct": 40.65702318891577,
+          "mc_upper95_pct": 40.92741709211576,
+          "min_pct": 39.82683982683983,
+          "max_pct": 46.01113172541744,
+          "casewise_pct": 50.580997949419,
+          "old_50_mean_pct": 40.79,
+          "delta_vs_prior50_pct_points": 0.002220140515767355,
+          "avg_n_refined_blocks": 56.535
+        },
+        "4": {
+          "condition": "PDAC/NET Gemini",
+          "n": 77,
+          "errors": 40,
+          "risk_pct": 5,
+          "k": 4,
+          "seeds": 200,
+          "baseline_pct": 39.40886699507389,
+          "mean_pct": 43.93214579646159,
+          "gain_pct_points": 4.523278801387697,
+          "sd_pct": 2.150340821121994,
+          "se_pct": 0.15205205764776106,
+          "mc_lower95_pct": 43.634123763471976,
+          "mc_upper95_pct": 44.230167829451204,
+          "min_pct": 40.58441558441559,
+          "max_pct": 50.46382189239332,
+          "casewise_pct": 50.580997949419,
+          "old_50_mean_pct": 44.21,
+          "delta_vs_prior50_pct_points": -0.2778542035384106,
+          "avg_n_refined_blocks": 60.495
+        },
+        "16": {
+          "condition": "PDAC/NET Gemini",
+          "n": 77,
+          "errors": 40,
+          "risk_pct": 5,
+          "k": 16,
+          "seeds": 200,
+          "baseline_pct": 39.40886699507389,
+          "mean_pct": 49.121815283057295,
+          "gain_pct_points": 9.712948287983401,
+          "sd_pct": 1.4905509778905255,
+          "se_pct": 0.10539787041706301,
+          "mc_lower95_pct": 48.91523545703985,
+          "mc_upper95_pct": 49.32839510907474,
+          "min_pct": 42.780748663101605,
+          "max_pct": 50.580997949419,
+          "casewise_pct": 50.580997949419,
+          "old_50_mean_pct": 49.06,
+          "delta_vs_prior50_pct_points": 0.06181528305729245,
+          "avg_n_refined_blocks": 70.23
+        }
+      }
+    }
+  },
+  "summary": [
+    {
+      "condition": "All-category GPT",
+      "n": 86,
+      "errors": 31,
+      "risk_pct": 5,
+      "k": 2,
+      "seeds": 200,
+      "baseline_pct": 44.397463002114165,
+      "mean_pct": 51.013065853466614,
+      "gain_pct_points": 6.615602851352449,
+      "sd_pct": 4.211442102260119,
+      "se_pct": 0.297793926908266,
+      "mc_lower95_pct": 50.429389756726415,
+      "mc_upper95_pct": 51.59674195020681,
+      "min_pct": 44.397463002114165,
+      "max_pct": 61.12956810631229,
+      "casewise_pct": 67.31946144430844,
+      "old_50_mean_pct": 50.92,
+      "delta_vs_prior50_pct_points": 0.09306585346661223,
+      "avg_n_refined_blocks": 54.94
+    },
+    {
+      "condition": "All-category GPT",
+      "n": 86,
+      "errors": 31,
+      "risk_pct": 5,
+      "k": 4,
+      "seeds": 200,
+      "baseline_pct": 44.397463002114165,
+      "mean_pct": 56.44216098999086,
+      "gain_pct_points": 12.044697987876695,
+      "sd_pct": 3.6775014499294802,
+      "se_pct": 0.2600386213068496,
+      "mc_lower95_pct": 55.93248529222944,
+      "mc_upper95_pct": 56.951836687752284,
+      "min_pct": 46.51162790697674,
+      "max_pct": 65.5813953488372,
+      "casewise_pct": 67.31946144430844,
+      "old_50_mean_pct": 55.87,
+      "delta_vs_prior50_pct_points": 0.5721609899908628,
+      "avg_n_refined_blocks": 57.485
+    },
+    {
+      "condition": "All-category GPT",
+      "n": 86,
+      "errors": 31,
+      "risk_pct": 5,
+      "k": 16,
+      "seeds": 200,
+      "baseline_pct": 44.397463002114165,
+      "mean_pct": 64.70835374155898,
+      "gain_pct_points": 20.310890739444815,
+      "sd_pct": 1.7084333348142196,
+      "se_pct": 0.1208044796252282,
+      "mc_lower95_pct": 64.47157696149354,
+      "mc_upper95_pct": 64.94513052162442,
+      "min_pct": 59.800664451827245,
+      "max_pct": 67.31946144430844,
+      "casewise_pct": 67.31946144430844,
+      "old_50_mean_pct": 64.85,
+      "delta_vs_prior50_pct_points": -0.14164625844101408,
+      "avg_n_refined_blocks": 67.83
+    },
+    {
+      "condition": "All-category Gemini",
+      "n": 88,
+      "errors": 50,
+      "risk_pct": 5,
+      "k": 2,
+      "seeds": 200,
+      "baseline_pct": 36.05015673981191,
+      "mean_pct": 37.09048730314586,
+      "gain_pct_points": 1.0403305633339528,
+      "sd_pct": 0.6909772496066832,
+      "se_pct": 0.048859469884251536,
+      "mc_lower95_pct": 36.99472274217273,
+      "mc_upper95_pct": 37.186251864118994,
+      "min_pct": 36.36363636363637,
+      "max_pct": 40.90909090909091,
+      "casewise_pct": 45.45454545454545,
+      "old_50_mean_pct": 37.11,
+      "delta_vs_prior50_pct_points": -0.019512696854135925,
+      "avg_n_refined_blocks": 66.505
+    },
+    {
+      "condition": "All-category Gemini",
+      "n": 88,
+      "errors": 50,
+      "risk_pct": 5,
+      "k": 4,
+      "seeds": 200,
+      "baseline_pct": 36.05015673981191,
+      "mean_pct": 39.27926816350147,
+      "gain_pct_points": 3.2291114236895595,
+      "sd_pct": 1.6988022812810353,
+      "se_pct": 0.12012346129889967,
+      "mc_lower95_pct": 39.04382617935563,
+      "mc_upper95_pct": 39.514710147647314,
+      "min_pct": 36.93181818181818,
+      "max_pct": 44.19191919191919,
+      "casewise_pct": 45.45454545454545,
+      "old_50_mean_pct": 39.66,
+      "delta_vs_prior50_pct_points": -0.3807318364985264,
+      "avg_n_refined_blocks": 70.53
+    },
+    {
+      "condition": "All-category Gemini",
+      "n": 88,
+      "errors": 50,
+      "risk_pct": 5,
+      "k": 16,
+      "seeds": 200,
+      "baseline_pct": 36.05015673981191,
+      "mean_pct": 43.97471442508207,
+      "gain_pct_points": 7.924557685270159,
+      "sd_pct": 1.2958888121434966,
+      "se_pct": 0.09163317667304464,
+      "mc_lower95_pct": 43.795113398802904,
+      "mc_upper95_pct": 44.154315451361235,
+      "min_pct": 40.4040404040404,
+      "max_pct": 45.45454545454545,
+      "casewise_pct": 45.45454545454545,
+      "old_50_mean_pct": 43.87,
+      "delta_vs_prior50_pct_points": 0.10471442508207218,
+      "avg_n_refined_blocks": 80.77
+    },
+    {
+      "condition": "PDAC/NET GPT",
+      "n": 75,
+      "errors": 20,
+      "risk_pct": 5,
+      "k": 2,
+      "seeds": 200,
+      "baseline_pct": 77.03703703703704,
+      "mean_pct": 77.1150097465887,
+      "gain_pct_points": 0.07797270955165914,
+      "sd_pct": 0.07816837537888495,
+      "se_pct": 0.005527338830474511,
+      "mc_lower95_pct": 77.10417616248097,
+      "mc_upper95_pct": 77.12584333069643,
+      "min_pct": 77.03703703703704,
+      "max_pct": 77.19298245614036,
+      "casewise_pct": 77.19298245614036,
+      "old_50_mean_pct": 77.11,
+      "delta_vs_prior50_pct_points": 0.005009746588697794,
+      "avg_n_refined_blocks": 47.955
+    },
+    {
+      "condition": "PDAC/NET GPT",
+      "n": 75,
+      "errors": 20,
+      "risk_pct": 5,
+      "k": 4,
+      "seeds": 200,
+      "baseline_pct": 77.03703703703704,
+      "mean_pct": 77.15399610136453,
+      "gain_pct_points": 0.1169590643274887,
+      "sd_pct": 0.06769579885067241,
+      "se_pct": 0.004786815842515095,
+      "mc_lower95_pct": 77.1446139423132,
+      "mc_upper95_pct": 77.16337826041585,
+      "min_pct": 77.03703703703704,
+      "max_pct": 77.19298245614036,
+      "casewise_pct": 77.19298245614036,
+      "old_50_mean_pct": 77.16,
+      "delta_vs_prior50_pct_points": -0.006003898635469795,
+      "avg_n_refined_blocks": 50.425
+    },
+    {
+      "condition": "PDAC/NET GPT",
+      "n": 75,
+      "errors": 20,
+      "risk_pct": 5,
+      "k": 16,
+      "seeds": 200,
+      "baseline_pct": 77.03703703703704,
+      "mean_pct": 77.18674463937623,
+      "gain_pct_points": 0.14970760233919123,
+      "sd_pct": 0.03063562139209661,
+      "se_pct": 0.0021662655632215173,
+      "mc_lower95_pct": 77.18249875887231,
+      "mc_upper95_pct": 77.19099051988015,
+      "min_pct": 77.03703703703704,
+      "max_pct": 77.19298245614036,
+      "casewise_pct": 77.19298245614036,
+      "old_50_mean_pct": 77.19,
+      "delta_vs_prior50_pct_points": -0.0032553606237684107,
+      "avg_n_refined_blocks": 60.1
+    },
+    {
+      "condition": "PDAC/NET Gemini",
+      "n": 77,
+      "errors": 40,
+      "risk_pct": 5,
+      "k": 2,
+      "seeds": 200,
+      "baseline_pct": 39.40886699507389,
+      "mean_pct": 40.79222014051577,
+      "gain_pct_points": 1.3833531454418733,
+      "sd_pct": 0.9754967476745633,
+      "se_pct": 0.06897803653061062,
+      "mc_lower95_pct": 40.65702318891577,
+      "mc_upper95_pct": 40.92741709211576,
+      "min_pct": 39.82683982683983,
+      "max_pct": 46.01113172541744,
+      "casewise_pct": 50.580997949419,
+      "old_50_mean_pct": 40.79,
+      "delta_vs_prior50_pct_points": 0.002220140515767355,
+      "avg_n_refined_blocks": 56.535
+    },
+    {
+      "condition": "PDAC/NET Gemini",
+      "n": 77,
+      "errors": 40,
+      "risk_pct": 5,
+      "k": 4,
+      "seeds": 200,
+      "baseline_pct": 39.40886699507389,
+      "mean_pct": 43.93214579646159,
+      "gain_pct_points": 4.523278801387697,
+      "sd_pct": 2.150340821121994,
+      "se_pct": 0.15205205764776106,
+      "mc_lower95_pct": 43.634123763471976,
+      "mc_upper95_pct": 44.230167829451204,
+      "min_pct": 40.58441558441559,
+      "max_pct": 50.46382189239332,
+      "casewise_pct": 50.580997949419,
+      "old_50_mean_pct": 44.21,
+      "delta_vs_prior50_pct_points": -0.2778542035384106,
+      "avg_n_refined_blocks": 60.495
+    },
+    {
+      "condition": "PDAC/NET Gemini",
+      "n": 77,
+      "errors": 40,
+      "risk_pct": 5,
+      "k": 16,
+      "seeds": 200,
+      "baseline_pct": 39.40886699507389,
+      "mean_pct": 49.121815283057295,
+      "gain_pct_points": 9.712948287983401,
+      "sd_pct": 1.4905509778905255,
+      "se_pct": 0.10539787041706301,
+      "mc_lower95_pct": 48.91523545703985,
+      "mc_upper95_pct": 49.32839510907474,
+      "min_pct": 42.780748663101605,
+      "max_pct": 50.580997949419,
+      "casewise_pct": 50.580997949419,
+      "old_50_mean_pct": 49.06,
+      "delta_vs_prior50_pct_points": 0.06181528305729245,
+      "avg_n_refined_blocks": 70.23
+    }
+  ]
+}
