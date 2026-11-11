@@ -1,6 +1,6 @@
 # Separating Threshold Failure from Information Limits in Repeated LLM Inference
 
-**Repository preparation package — private draft, 9 November 2026.**
+**Private draft repository — updated 11 November 2026.**
 
 Authors: Takeshi Hara and Hideya Konishi.
 
@@ -16,6 +16,9 @@ This project accompanies a draft for W3PHIAI-27 on retrospective, fixed-sample a
 - `code/partial_collision_certificate.py` — **new, standalone illustrative implementation** of the exact-rational partial-equivalence upper bound for the aggregate numerical example in Section 4.2.
 - `tests/test_partial_collision_certificate.py` — tests for selected published aggregate rational values.
 - `docs/original_packaging_notes.txt` — original source-ZIP notes, retained for provenance; these describe an earlier 7-page trial and should not be read as current submission status.
+- [`reproduction/README.md`](reproduction/README.md) — aggregate clinical P0 and 200-seed synthetic P1 runs, Figure 1/2 audits, and current reproduction limitations.
+- [`reproduction/README_400_EXPERIMENTS.md`](reproduction/README_400_EXPERIMENTS.md) — two distinct, recovered and independently rerun **400-dataset synthetic benchmarks** (September structural partial-disclosure study and November P3 minimum-evidence study); setup and scope are documented in their subdirectories.
+- [`provenance/README.md`](provenance/README.md) — restricted-source archival checks and dated case005 documentary reconciliation.
 
 ## Run the illustrative exact-rational certificate
 
@@ -34,7 +37,9 @@ Open `paper/oracle_aaai27_trial.tex` with pdfLaTeX + BibTeX (including the adjac
 
 ## Data, provenance, and scope limitations
 
-The underlying retrospective clinical study received IRB approval (No. 7224). Patient-level imaging, clinical data, individual model outputs, and patient identifiers are intentionally **not distributed**. The original experimental analysis scripts and simulation pipelines were **not supplied in the material used to create this package**, so this repository does **not** reproduce all results reported in the manuscript. The separate certificate illustration was written for this repository and is not represented as the archived study implementation.
+The underlying retrospective clinical study received IRB approval (No. 7224). Patient-level imaging, clinical data, individual model outputs, and patient identifiers are intentionally **not distributed**. Since the initial 9 November packaging, the original code and stored results for **both 400-dataset synthetic experiments** have been recovered, checked locally, and added under `reproduction/`. The September structural benchmark has a **synthetic-only command-line entrypoint adaptation** (no clinical-input loading), described in its README; the P3 minimum-evidence generator and verification files are supplied separately. These additions reproduce the reported synthetic results under their archived configurations. Aggregate clinical audits and the independent 200-seed synthetic control also have dedicated reproduction material.
+
+**This remains a partial public-facing reproduction package**, not an end-to-end rerun from all original clinical cases: patient-level run extraction, pathology/ground-truth adjudication, clinical input provenance, and prospective clinical performance are not independently reproduced here. The standalone `code/partial_collision_certificate.py` is an illustrative implementation written for this repository, not the archived study's analysis code. See the separate reproduction and provenance READMEs for exact scopes.
 
 Results in the draft refer to a fixed labeled cohort and retrospective oracle audits. The repository does not provide prospective clinical risk-control guarantees or a deployable diagnostic system.
 
