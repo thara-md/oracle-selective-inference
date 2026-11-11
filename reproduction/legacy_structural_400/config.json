@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "analysis_type": "Post-hoc computational validation; not clinical preregistration or IRB approval",
+  "base_seed": 20260916,
+  "alpha_percent": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+  "coverage_percent": [10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90],
+  "clinical": {"scopes": ["all_GT","PDAC_NET"], "models": ["GPT","Gemini"], "noise_seeds": 50, "noise_cardinalities": [2,4,16]},
+  "synthetic": {
+    "n": [100,500], "repeats": 50, "T": 20, "error_fraction": 0.3,
+    "scenarios": ["homogeneous_duplicates","unanimous_mixed","distributed_mixed","mostly_unique"],
+    "disclosure_fractions": [0,0.25,0.5,0.75,1],
+    "disclosure_strategies": ["random","size_descending"],
+    "additional_strategy": "unanimity_only",
+    "disclosure_rounding": "floor(fraction * number_of_duplicate_blocks)",
+    "fixed_witness": "oracle of (stored 3-decimal entropy, fixed diagnosis); full-sequence solution never used as a witness for partial disclosure",
+    "unresolved_metrics": "Report both fixed-summary-witness unresolved and audit-unresolved with full completion witness at 100% enumeration",
+    "partition_details": {
+      "homogeneous_duplicates": "Within each prediction class and correctness group, random chunks of 2..8 (last chunk may be singleton); first pure-correct block per prediction class uses unanimous labels.",
+      "unanimous_mixed": "Per class, round(60% correct) and round(60% errors) allocated to one unanimous block; remaining rows grouped separately by correctness.",
+      "distributed_mixed": "Per class, round(20% correct) and round(20% errors) allocated to one unanimous block; all remaining rows partitioned into mixed non-unanimous blocks where feasible, each seeded with at least one correct and one error.",
+      "mostly_unique": "Per class, round(10% correct) and round(10% errors) each allocated to one unanimous and one non-unanimous block; remaining rows have unique non-unanimous sequences.",
+      "sequence_generation": "Unique sequence per designed block; modal label appears 11..19 of 20 positions for non-unanimous blocks; residual counts and order randomized; all modes unique. Symbolic categories K0,K1,K2.",
+      "paired_design": "Same n, exact total errors, predictions and row-level correctness across the four scenarios for each n/seed; scenarios differ in partition/sequence structure. No real patient labels altered."
+    }
+  },
+  "synthetic_signal_control": {
+    "repeats": 50, "train_n": 500, "calibration_n": 500, "test_n": 5000,
+    "error_probability": 0.3, "signal_agreement": [0.5,0.7,0.9,0.98],
+    "policies": ["modal_only","modal_iid_bit","modal_signal","modal_unique_id"],
+    "observation": "12 fixed sequence templates independent of errors; modal diagnosis in {K0,K1,K2}; signal equals the error bit with specified probability, in a declared synthetic joint distribution only; iid bit and unique IDs independent of errors.",
+    "learner": "Laplace-smoothed empirical error frequency by policy key, trained on training set only; unseen keys fall back to training modal risk. Unique IDs disjoint across train/cal/test.",
+    "threshold": "On separate calibration set maximize nonempty coverage subject to empirical risk<=0.05; tied scores accepted together. If none qualifies accept nothing. No test-label threshold adjustment.",
+    "report": "Training empirical oracle plus fixed learned gate test risk/coverage. Empty-selection risk is NA. This is an artificial positive/negative control, not clinical generalization."
+  },
+  "validation": {"fraction_arithmetic": true, "scipy_check": "All 32 clinical evidence subsets x21 alphas, plus first synthetic seed at each size/scenario x11 evidence settings x3 alphas, plus 100 random block tests x3 alphas", "input_hash_check": true},
+  "changes_from_proposal": [
+    "Specified the previously unspecified synthetic partition mechanisms, random streams, noise cardinalities and positive-signal independent train/cal/test mechanism before running these studies.",
+    "Unrounded entropy equivalence uses the exact integer product of nonzero count**count (fixed T=20), not fragile floating-point equality.",
+    "Unresolved with a fixed summary witness is recorded separately from full-enumeration audit resolution; the full oracle never leaks into partial-stage feasibility witnesses.",
+    "No public external dataset, clinical Confidence/Features gate, new LLM query, reader assessment, or clinical independent test is included."
+  ]
+}

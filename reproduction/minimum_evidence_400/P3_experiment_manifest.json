@@ -1,0 +1,45 @@
+{
+  "experiment": "P3 independent minimal-partial-evidence fixed-sample audit",
+  "base_seed": 20261105,
+  "n_per_scenario": 100,
+  "scenario_names": [
+    "concentrated_mixed",
+    "dispersed_mixed",
+    "homogeneous",
+    "high_uniqueness"
+  ],
+  "total_datasets": 400,
+  "N": 120,
+  "error_count": 36,
+  "alpha_exact": [
+    "1/50",
+    "1/20",
+    "1/10"
+  ],
+  "coverage_targets_exact": [
+    "2/5",
+    "17/40",
+    "9/20",
+    "19/40",
+    "1/2",
+    "21/40",
+    "11/20",
+    "23/40",
+    "3/5",
+    "5/8",
+    "13/20",
+    "27/40",
+    "7/10",
+    "29/40",
+    "3/4",
+    "31/40",
+    "4/5"
+  ],
+  "randomness": "NumPy default_rng SeedSequence [BASE_SEED, scenario_index, seed]",
+  "procedure": "Exact optimistic upper bounds for every subset of known duplicate blocks. Unverified records may be perfectly error-separated. Lexicographic minimal certificate by number of verified blocks, then number of records.",
+  "casewise_info_infeasible_definition": "casewise coverage >= target and full-sequence coverage < target",
+  "exclude_strict": "upper_bound < coverage_target; equality is feasible, not excluded",
+  "verification_cost_proxy": "Records in verified equality blocks; this is an abstract workload proxy, not measured analyst time; GT of the entire audited set is still assumed known.",
+  "false_certificate": "Impossible when all revealed equality constraints are true; checked monotonicity on every simulated subset.",
+  "scope": "Synthetic generator newly created for P3, NOT original unarchived synthetic 400 sets in 2026-11-04 P2, no claim of reproducing earlier numerical percentages."
+}
