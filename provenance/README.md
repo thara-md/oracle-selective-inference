@@ -27,8 +27,18 @@ Important qualifications, preserved from the historic audit:
 
 - 52 of 52 previously missing unit sequences were recovered; stored entropy matched all 174 units.
 - For 65 units the historic accepted-run list was available. For 108 units, there were exactly 20 unflagged candidates but no independent acceptance manifest certification.
-- For GPT case005, 21 unflagged runs share the same diagnosis. The 20-label sequence is invariant, but the historic selected subset of 20 original run files cannot be identified from the archived evidence.
+- At the **September 15 archive-only recovery stage**, GPT case005 had 21 unflagged candidate runs sharing the same diagnosis; the recorded PDAC×20 label sequence was invariant to which 20 were selected. The individual accepted-run subset was **not independently identified from those recovered files alone**. A later documentary reconciliation is described below.
 - Seven saved modal diagnoses were tied; the stored diagnoses were retained, not re-tie-broken.
 - This retrospective verification does not independently certify image submission, backend model identities, final GT pathology, IRB coverage, or prospective risk control.
 
-**Do not misrepresent `verify_source_archives.py` as reproducing the full Oracle experiments.** It verifies byte integrity of archived inputs. The original restricted `recover_and_audit.py` and private input tables are separately needed for the full clinical label audit. Other synthetic experiments require their own scripts and seeds.
+## Subsequent case005 documentary reconciliation (September 17, 2026)
+
+A later author-compiled `案2_Supplementary_S1_case005と来歴_20260917.docx` reconciled the earlier unresolved *file-subset identification* with existing written run-inclusion rules and an individual case record:
+
+- `Shijisho_v3_3_20260730`, §2.1 R-4, specifies retaining the first 20 valid runs in ascending run-number order when more than 20 valid candidates exist.
+- `Amendment4_E2_20260730`, §3.1, records GPT case005 Run21 as an extra valid run to be excluded.
+- On that **documentary basis**, Supplementary S1 identifies **Run01–20 as accepted and Run21 as excluded**. All 21 candidates have the same diagnostic label (PDAC), so the 20-label Oracle input is unchanged.
+
+This is a **subsequent documentation-level reconciliation**, not an alteration of the September 15 raw audit or an independent reauthentication of model inputs, images, pathology, or the original per-file manifest. Preserve both dated stages rather than retroactively rewriting historical evidence. The cited original institutional records and Supplementary S1 are not distributed here.
+
+**Do not misrepresent `verify_source_archives.py` as reproducing the full Oracle experiments.** It verifies byte integrity of archived inputs. The original restricted `recover_and_audit.py` and private input tables are separately needed for the full clinical label audit. Recovered synthetic-only generation and verification scripts are documented under [`../reproduction/`](../reproduction/README.md).
