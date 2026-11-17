@@ -1,8 +1,10 @@
 # Separating Threshold Failure from Information Limits in Repeated LLM Inference
 
-**Private draft repository — updated 11 November 2026.**
+**Public research companion repository — updated 20 November 2026.**
 
 Authors: Takeshi Hara and Hideya Konishi.
+
+The manuscript PDF and LaTeX source in this repository are earlier working versions dated 9 November 2026. The final W3PHIAI-27 submission version is maintained separately in EasyChair. The repository primarily provides accompanying code, reproducibility materials, and provenance documentation.
 
 This project accompanies a draft for W3PHIAI-27 on retrospective, fixed-sample auditing of selective prediction with repeated diagnostic-label outputs. It separates the failure of a particular uncertainty threshold from information-restricted infeasibility using verified observation-equality blocks. It also distinguishes empirical post-hoc oracle improvements from independent-test performance.
 
